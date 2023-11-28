@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.mi-color {
+    background-color: rgb(110,43,243);
+    outline-color: rgb(110,43,243);
+    border-color: rgb(110,43,243);
+    --bs-btn-hover-color: var(--bs-white);
+
+}
+
+/* TITULO Y SUBTITULO */
+
+#intro {
+    background-image: url(../img/fondo-madera-engranaje.jpg);
+    background-size: cover;
+    margin: 10px;
+    height: 450px;
+    
+}
+
+#intro div {
+    margin-left: 50px;
+}
+
+#intro h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    padding: 20px 0px;
+/* aca en caso de modificar el margin esperando que se modifique solo para el titulo
+y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el margin de la seccion*/
+}
+
+#intro h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+#intro p {
+    font-size:large;
+    font-weight: 500;
+}
+
+/* CONOCENOS MEJOR */
+
+#conocenos{
+    margin: 10px;
+}
+
+#conocenos h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 100 !important;
+}
+
+.img-taller {
+    height: fit-content;
+}
