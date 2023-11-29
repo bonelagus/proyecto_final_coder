@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 
@@ -6,21 +6,38 @@
 
 
 .mi-color {
-    background-color: rgb(110,43,243);
-    outline-color: rgb(110,43,243);
-    border-color: rgb(110,43,243);
+    background-color: rgb(110, 43, 243);
+    outline-color: rgb(110, 43, 243);
+    border-color: rgb(110, 43, 243);
     --bs-btn-hover-color: var(--bs-white);
 
+}
+
+body {
+    background-color: #f7e4be;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #b85420;
+}
+
+.nav-item {
+    margin: 3px;
+}
+
+.titulo-navbar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
 }
 
 /* TITULO Y SUBTITULO */
 
 #intro {
-    background-image: url(../img/fondo-madera-engranaje.jpg);
+    background-image: url(../img/bg-moto-lago.jpg);
     background-size: cover;
     margin: 10px;
-    height: 450px;
-    
+    height: 500px;
 }
 
 #intro div {
@@ -29,37 +46,183 @@
 
 #intro h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: center;
     padding: 20px 0px;
-/* aca en caso de modificar el margin esperando que se modifique solo para el titulo
+    /* aca en caso de modificar el margin esperando que se modifique solo para el titulo
 y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el margin de la seccion*/
 }
 
-#intro h3{
+#intro h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 20px;
 }
 
 #intro p {
-    font-size:large;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 /* CONOCENOS MEJOR */
 
-#conocenos{
+#conocenos {
     margin: 10px;
 }
 
-#conocenos h2{
+#conocenos h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
     text-align: center;
     font-weight: 100 !important;
+    margin: 30px;
+
 }
 
 .img-taller {
     height: fit-content;
+}
+
+/* COMENTARIOS */
+
+#comentarios {
+    margin: 30px 10px;
+}
+
+#comentarios h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+.text-body-secondary {
+    color: #ffaa20 !important;
+    font-weight: bolder;
+}
+
+.icon-comentarios {
+    width: 70px;
+    max-height: 50px;
+    display: flex;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+}
+
+
+/* CONTACTO */
+
+/* PORQUE ESTO NO FUNCIONARIA PARA HACER UNA SOLA COLUMNA MIENTRAS QUE EL ANCHO SEA 480px COMO MAXIMO??? */
+@media screen and (max-width: 480px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contacto {
+    margin: 10px 60px;
+}
+
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    /* border: 2px solid black; */
+    row-gap: 15px;
+    column-gap: 40px;
+}
+
+/* .grid-item {
+    border: 2px solid black;
+} */
+
+#comunicate {
+    grid-row: 1/3;
+}
+
+#turno {
+    grid-row: 3/4;
+}
+
+#mapa {
+    grid-row: 1/4;
+}
+
+#comunicate h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+#comunicate p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px 10px;
+}
+
+/* NINGUNO DE ESTOS FUNCIONA PARA CENTRAR EL BOTON */
+#turno {
+    display: inline;
+    align-items: center;
+}
+#turno a{
+    align-items: center;
+}
+
+#turno h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+#mapa h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+#mapa p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.contacto h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #fcc185;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+footer h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100 !important;
+    margin: 0px;
+}
+
+footer h4 a {
+    color: black;
+    text-decoration: none;
+}
+
+footer span img {
+    max-height: 50px;
 }
