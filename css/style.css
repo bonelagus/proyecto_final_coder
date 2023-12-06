@@ -44,6 +44,8 @@ body {
     margin-left: 50px;
 }
 
+
+
 #intro h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6rem;
@@ -64,6 +66,20 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
     font-weight: 600;
 }
 
+@media only screen and (max-width: 600px) {
+    #intro h1 {
+        font-size: 4rem;
+    }
+    #intro h3 {
+        font-size: 2rem;
+    }
+    #intro p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
 /* CONOCENOS MEJOR */
 
 #conocenos {
@@ -82,6 +98,10 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
 .img-taller {
     height: fit-content;
 }
+
+#conocenos .texto_conocenos {
+background-color: red;
+} 
 
 /* COMENTARIOS */
 
@@ -115,11 +135,6 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
 /* CONTACTO */
 
 /* PORQUE ESTO NO FUNCIONARIA PARA HACER UNA SOLA COLUMNA MIENTRAS QUE EL ANCHO SEA 480px COMO MAXIMO??? */
-@media screen and (max-width: 480px) {
-    .contacto-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 .contacto {
     margin: 10px 60px;
@@ -128,28 +143,47 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
 
 .contacto-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
-    /* border: 2px solid black; */
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
     row-gap: 15px;
-    column-gap: 40px;
 }
 
-/* .grid-item {
-    border: 2px solid black;
-} */
-
-#comunicate {
-    grid-row: 1/3;
+@media only screen and (min-width: 1024px) {
+    .contacto-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+        column-gap: 40px;
+    
+    }
+    #comunicate {
+        grid-row: 2/4;
+    } 
+    #mapa {
+        grid-row: 1/4;
+    } 
 }
 
+/* NINGUNO DE ESTOS FUNCIONA PARA CENTRAR EL BOTON */
 #turno {
-    grid-row: 3/4;
+    align-items: center;
+    justify-content: center;
+}
+#turno div .btn-warning{
+    
+    /* justify-self: center; */
+    
+}
+#turno div p {
+    background-color: red;
 }
 
-#mapa {
-    grid-row: 1/4;
+#turno h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
 }
+
 
 #comunicate h5 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -163,22 +197,10 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
     margin: 30px 10px;
 }
 
-/* NINGUNO DE ESTOS FUNCIONA PARA CENTRAR EL BOTON */
-#turno {
-    display: inline;
+
+#mapa {
     align-items: center;
 }
-#turno a{
-    align-items: center;
-}
-
-#turno h5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-
 
 #mapa h5 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -194,6 +216,7 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
     margin: 0px 0px 50px 0px;
 }
 
+
 .contacto h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
@@ -201,6 +224,9 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
     margin: 10px;
 
 }
+
+
+
 
 /* FOOTER */
 
@@ -225,4 +251,9 @@ footer h4 a {
 
 footer span img {
     max-height: 50px;
+}
+
+.img_contacto {
+    justify-self: right;
+    padding: 10px;
 }

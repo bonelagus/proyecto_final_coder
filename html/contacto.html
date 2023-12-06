@@ -30,13 +30,13 @@
                             <a class="btn btn-outline-warning" href="../index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-warning" href="#">NOSOTROS</a>
+                            <a class="btn btn-outline-warning disabled" href="#">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-warning" href="#">SERVICIOS</a>
+                            <a class="btn btn-outline-warning disabled" href="#">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-warning" href="#">PROYECTOS</a>
+                            <a class="btn btn-outline-warning disabled" href="#">PROYECTOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-warning" href="../html/contacto.html">CONTACTO</a>
@@ -51,23 +51,25 @@
     <section class="contacto">
         <h2>CONTACTO</h2>
         <section class="contacto-grid">
+
+            <div class="grid-item" id="turno">
+                <h5>SACAR UN TURNO</h5>
+                <div>
+                    <a class="btn btn-warning disabled" href=""> TURNERO </a>
+                    <p>No se porque no puedo centrar este boton</p>
+                </div>
+            </div>
+
             <div class="grid-item" id="comunicate">
                 <h5>COMUNICATE CON NOSOTROS</h5>
                 <p>Numeros de telefonos: <br>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
                     officiis, rem hic alias tempora distinctio aliquam atque laudantium voluptas laborum id similique
-                    quod, delectus beatae porro enim voluptates. Iusto, in. <br><br>
-                    Mails: <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis cumque, illum
-                    voluptates sed nihil earum sequi ex labore vero odit ullam consequatur omnis. Dolore molestias quae
-                    eaque ad repudiandae.</p>
-            </div>
-
-            <div class="grid-item" id="turno">
-                <h5>SACAR UN TURNO</h5>
-                <div>
-                    <a class="btn btn-warning" href="../servicios.html"> TURNERO </a>
-                    <p>No se porque no puedo centrar este boton ni tampoco hacer funcionar la media query que tengo declara en el css para hacer una sola columna en caso de tener menos de 480px </p>
-                </div>
+                    quod, delectus beatae porro enim voluptates. <br><br>
+                    Mails: <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis cumque, illum
+                    voluptates sed nihil earum sequi ex labore vero odit ullam consequatur omnis.
+                </p>
             </div>
 
             <div class="grid-item" id="mapa">
@@ -75,7 +77,7 @@
                 <p>(o al menos donde nos gustaria estar)</p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.8931257245845!2d139.99291929999998!3d35.8270978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601882eeac9c8997%3A0xbe17ae7aad1e27b4!2sRAUH-Welt%20Begriff%20(RWB)!5e0!3m2!1ses!2sar!4v1701223606235!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
@@ -93,7 +95,7 @@
             <a class="social_media" href="https://youtube.com"><img src="../img/youtube-icon.png" alt="YouTube"></a>
         </span>
         <span>
-            <a class="contacto" href="https://whatsapp.com"><img src="../img/whatsapp-icon.png" alt="WhatsApp"></a>
+            <a class="img_contacto" href="https://whatsapp.com"><img src="../img/whatsapp-icon.png" alt="WhatsApp"></a>
             <a class="btn btn-warning" href="../html/contacto.html">CONTACTO</a>
         </span>
     </footer>
