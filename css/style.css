@@ -37,31 +37,27 @@ body {
     background-image: url(../img/bg-moto-lago.jpg);
     background-size: cover;
     margin: 10px;
-    height: 500px;
+    min-height: 500px;
 }
 
 #intro div {
     margin-left: 50px;
 }
 
-
-
 #intro h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6rem;
     text-align: center;
     padding: 20px 0px;
-    /* aca en caso de modificar el margin esperando que se modifique solo para el titulo
-y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el margin de la seccion*/
 }
 
-#intro h3 {
+.titulo_h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
-    margin: 20px;
+    margin: 10px 0px 20px 50px;
 }
 
-#intro p {
+.parrafo_sub_h3 {
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -86,7 +82,7 @@ y asi poder "centrarlo" un poco mas abajo en la imagen, se me modifica todo el m
     margin: 10px;
 }
 
-#conocenos h2 {
+.titulo_h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
     text-align: center;
@@ -132,9 +128,60 @@ background-color: red;
 }
 
 
-/* CONTACTO */
+/* NOSOTROS */
+#nosotros {
+    margin: 10px;
+}
+#nosotros main {
+    background-image: url(../IMG/bg-jp_performance.jpg);
+    background-size: cover;
+    margin: 10px 0px;
+    min-height: 550px;
+}
 
-/* PORQUE ESTO NO FUNCIONARIA PARA HACER UNA SOLA COLUMNA MIENTRAS QUE EL ANCHO SEA 480px COMO MAXIMO??? */
+.caja_transparente {
+    background-color: rgb(255,255,255,.6);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+
+/* SERVICIOS */
+
+#servicios {
+    margin: 10px;
+}
+
+#servicios .nuestros_servicios {
+    background-image: url(../IMG/bg-taller.jpg);
+    background-size: cover;
+    margin: 10px 0px;
+    min-height: 550px;
+}
+
+#servicios .boton-turnero {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+    #mantenimientos {
+        margin: 10px 50px;
+        }
+}
+
+
+
+#mantenimientos img {
+    /* max-height: 400px; */
+    height: auto;
+    max-width: 100%;
+    
+}
+
+/* CONTACTO */
 
 .contacto {
     margin: 10px 60px;
@@ -163,16 +210,6 @@ background-color: red;
     } 
 }
 
-/* NINGUNO DE ESTOS FUNCIONA PARA CENTRAR EL BOTON */
-#turno {
-    align-items: center;
-    justify-content: center;
-}
-#turno div .btn-warning{
-    
-    /* justify-self: center; */
-    
-}
 #turno div p {
     background-color: red;
 }
