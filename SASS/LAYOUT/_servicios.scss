@@ -1,0 +1,35 @@
+/* SERVICIOS */
+
+#servicios {
+    margin: 10px;
+    .nuestros_servicios {
+        background-image: url(../IMG/bg-taller.jpg);
+        background-size: cover;
+        margin: 10px 0px;
+        padding: 30px;
+        min-height: 550px;
+        
+    }
+    .boton-turnero {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+#mantenimientos {
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+    .container_imagenes{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+
+    }
+    .listas_mantenimiento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

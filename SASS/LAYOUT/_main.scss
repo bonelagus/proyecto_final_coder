@@ -1,0 +1,46 @@
+/* MAIN */
+#intro {
+    background-image: url(../img/bg-moto-lago.jpg);
+    background-size: cover;
+    margin: 10px;
+    min-height: 500px;
+    div {
+        margin-left: 50px;
+    }
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 6rem;
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
+#conocenos {
+    margin: 10px;
+    .img-taller {
+        height: fit-content;
+    }
+    .texto_conocenos {
+        background-color: red;
+    } 
+}
+#comentarios {
+    margin: 30px 10px;
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin: 30px;
+    }
+    .text-body-secondary {
+        color: #ffaa20 !important;
+        font-weight: bolder;
+    }
+    .icon-comentarios {
+        width: 70px;
+        max-height: 50px;
+        display: flex;
+    }
+    .card-title {
+        display: flex;
+        align-items: center;
+    }
+}

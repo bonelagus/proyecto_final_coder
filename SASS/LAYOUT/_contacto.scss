@@ -1,0 +1,58 @@
+/* CONTACTO */
+#contacto {
+    margin: 10px 60px;
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        margin: 10px;
+    
+    }
+    .contacto-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 15px;
+    }
+    // Aqui uso CONDICIONALES/media-min1024px
+}
+#turno {
+    h5 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px;
+    }
+    div p {
+        background-color: red;
+    }
+}
+
+#comunicate {
+    h5 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px;
+    }
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 30px 10px;
+    }
+}
+
+#mapa {
+    align-items: center;
+    h5 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px;
+    }
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.5;
+        text-align: center;
+        margin: 0px 0px 50px 0px;
+    }
+}

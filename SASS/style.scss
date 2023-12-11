@@ -1,0 +1,22 @@
+//COMPONENTES
+/* COMPONENTES */
+@import './COMPONENTES/caja_transparente';
+
+// BASE
+@import './BASE/reset';
+@import './BASE/fonts-styles';
+
+// LAYOUT
+@import './LAYOUT/main';
+@import './LAYOUT/nosotros';
+@import './LAYOUT/servicios';
+@import './LAYOUT/proyectos';
+@import './LAYOUT/contacto';
+
+@import './LAYOUT/footer';
+
+
+//CONDICIONALES
+@import './CONDICIONALES/media-min1024px';
+@import './CONDICIONALES/media-max1024px';
+@import './CONDICIONALES/media-max600px';

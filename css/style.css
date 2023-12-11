@@ -1,395 +1,344 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/* COMPONENTES */
+.caja_transparente {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 15px;
 }
 
-
-.mi-color {
-    background-color: rgb(110, 43, 243);
-    outline-color: rgb(110, 43, 243);
-    border-color: rgb(110, 43, 243);
-    --bs-btn-hover-color: var(--bs-white);
-
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f7e4be;
+  background-color: #f7e4be;
 }
 
 /* NAVBAR */
 .navbar {
-    background-color: #b85420;
+  background-color: #b85420;
 }
 
 .nav-item {
-    margin: 3px;
+  margin: 3px;
 }
 
 .titulo-navbar {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
 }
 
-/* TITULO Y SUBTITULO */
-
-#intro {
-    background-image: url(../img/bg-moto-lago.jpg);
-    background-size: cover;
-    margin: 10px;
-    min-height: 500px;
-}
-
-#intro div {
-    margin-left: 50px;
-}
-
-#intro h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6rem;
-    text-align: center;
-    padding: 20px 0px;
+/* FONTS_STYLES */
+.titulo_h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 100 !important;
+  margin: 30px;
 }
 
 .titulo_h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    margin: 10px 0px 20px 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  margin: 10px 0px 20px 50px;
 }
 
 .parrafo_sub_h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-@media only screen and (max-width: 600px) {
-    #intro h1 {
-        font-size: 4rem;
-    }
-    #intro h3 {
-        font-size: 2rem;
-    }
-    #intro p {
-        font-size: 1.2rem;
-    }
+.listas_h5 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
 }
 
+.listas li {
+  font-size: 1.2rem;
+}
 
-
-/* CONOCENOS MEJOR */
+/* MAIN */
+#intro {
+  background-image: url(../img/bg-moto-lago.jpg);
+  background-size: cover;
+  margin: 10px;
+  min-height: 500px;
+}
+#intro div {
+  margin-left: 50px;
+}
+#intro h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  padding: 20px 0px;
+}
 
 #conocenos {
-    margin: 10px;
+  margin: 10px;
 }
-
-.titulo_h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 100 !important;
-    margin: 30px;
-
+#conocenos .img-taller {
+  height: fit-content;
 }
-
-.img-taller {
-    height: fit-content;
-}
-
 #conocenos .texto_conocenos {
-background-color: red;
-} 
-
-/* COMENTARIOS */
+  background-color: red;
+}
 
 #comentarios {
-    margin: 30px 10px;
+  margin: 30px 10px;
 }
-
 #comentarios h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    margin: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin: 30px;
 }
-
-.text-body-secondary {
-    color: #ffaa20 !important;
-    font-weight: bolder;
+#comentarios .text-body-secondary {
+  color: #ffaa20 !important;
+  font-weight: bolder;
 }
-
-.icon-comentarios {
-    width: 70px;
-    max-height: 50px;
-    display: flex;
+#comentarios .icon-comentarios {
+  width: 70px;
+  max-height: 50px;
+  display: flex;
 }
-
-.card-title {
-    display: flex;
-    align-items: center;
+#comentarios .card-title {
+  display: flex;
+  align-items: center;
 }
-
 
 /* NOSOTROS */
 #nosotros {
-    margin: 10px;
+  margin: 10px;
 }
 #nosotros main {
-    background-image: url(../IMG/bg-jp_performance.jpg);
-    background-size: cover;
-    margin: 10px 0px;
-    min-height: 550px;
+  background-image: url(../IMG/bg-jp_performance.jpg);
+  background-size: cover;
+  margin: 10px 0px;
+  padding: 30px;
+  min-height: 550px;
 }
-
-.caja_transparente {
-    background-color: rgb(255,255,255,.6);
-    padding: 30px;
-    margin: 50px;
-    border-radius: 15px;
-}
-
 
 /* SERVICIOS */
-
 #servicios {
-    margin: 10px;
+  margin: 10px;
 }
-
 #servicios .nuestros_servicios {
-    background-image: url(../IMG/bg-taller.jpg);
-    background-size: cover;
-    margin: 10px 0px;
-    min-height: 550px;
+  background-image: url(../IMG/bg-taller.jpg);
+  background-size: cover;
+  margin: 10px 0px;
+  padding: 30px;
+  min-height: 550px;
 }
-
 #servicios .boton-turnero {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 #mantenimientos img {
-    /* max-height: 400px; */
-    height: auto;
-    max-width: 100%;
-    
+  height: auto;
+  max-width: 100%;
 }
-
-#mantenimientos .container_imagenes{
-    display: flex;
-    align-self: center;    
+#mantenimientos .container_imagenes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.listas_mantenimiento {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-/* ESTO NO FUNCIONO PARA SUBIR LA IMAGEN */
-@media only screen and (max-width:992) {
-    #mantenimientos .orden {
-        order:  -1;
-        background-color: red;
-    }
+#mantenimientos .listas_mantenimiento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* PROYECTOS */
 #grid_proyectos {
-    margin: 10px;
-    display: grid;
-    grid-template-rows: repeat(2, 350px);
-    grid-template-columns: repeat(4, 1fr);
-    
-    column-gap: 10px;
-    row-gap: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: repeat(2, 350px);
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
 }
 #grid_proyectos .grid-item-1 {
-    grid-row: 1/3;
-    grid-column: 1/3;
-    
-    display: flex;
-    justify-content: center;
+  grid-row: 1/3;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
 }
-
 #grid_proyectos .grid-item-3 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-    
-    display: flex;
-    justify-content: center;
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
 }
 #grid_proyectos .grid-item-4 {
-    grid-row: 1/2;
-    grid-column: 4/5;
-    
-    display: flex;
-    justify-content: center;
+  grid-row: 1/2;
+  grid-column: 4/5;
+  display: flex;
+  justify-content: center;
 }
-
 #grid_proyectos .grid-item-7 {
-    grid-row: 2/3;
-    grid-column: 3/5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  grid-row: 2/3;
+  grid-column: 3/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #grid_proyectos img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-@media only screen and (max-width: 1024px) {
-    #grid_proyectos {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 350px);
-    }
-    #grid_proyectos .grid-item-3 {
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-    #grid_proyectos .grid-item-4 {
-        grid-row: 3/4;
-        grid-column: 2/3;
-    }
-    #grid_proyectos .grid-item-7 {
-        grid-row: 4/5;
-        grid-column: 1/3;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #grid_proyectos {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 350px);
-    }
-    #grid_proyectos .grid-item-1 {
-        grid-row: 1/3;
-        grid-column: 1/2;
-    }
-    #grid_proyectos .grid-item-3 {
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-    #grid_proyectos .grid-item-4 {
-        grid-row: 4/5;
-        grid-column: 1/2;
-        
-    }
-    #grid_proyectos .grid-item-7 {
-        grid-row: 5/6;
-        grid-column: 1/2;
-    }
+  width: 100%;
 }
 
 /* CONTACTO */
-
-.contacto {
-    margin: 10px 60px;
+#contacto {
+  margin: 10px 60px;
 }
-
-
-.contacto-grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-    row-gap: 15px;
+#contacto h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px;
 }
-
-@media only screen and (min-width: 1024px) {
-    .contacto-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
-        column-gap: 40px;
-    
-    }
-    #comunicate {
-        grid-row: 2/4;
-    } 
-    #mapa {
-        grid-row: 1/4;
-    } 
-}
-
-#turno div p {
-    background-color: red;
+#contacto .contacto-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 15px;
 }
 
 #turno h5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px;
 }
-
+#turno div p {
+  background-color: red;
+}
 
 #comunicate h5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px;
 }
-
 #comunicate p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 30px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 30px 10px;
 }
-
 
 #mapa {
-    align-items: center;
+  align-items: center;
 }
-
 #mapa h5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px;
 }
-
 #mapa p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.5;
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.5;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
-
-
-.contacto h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    margin: 10px;
-
-}
-
-
-
 
 /* FOOTER */
-
 footer {
-    background-color: #fcc185;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
+  background-color: #fcc185;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
 }
-
 footer h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 100 !important;
-    margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100 !important;
+  margin: 0px;
 }
-
 footer h4 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
-
 footer span img {
-    max-height: 50px;
+  max-height: 50px;
+}
+footer .img_contacto {
+  justify-self: right;
+  padding: 10px;
 }
 
-.img_contacto {
-    justify-self: right;
-    padding: 10px;
+@media only screen and (min-width: 1024px) {
+  #contacto .contacto-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    column-gap: 40px;
+  }
+  #comunicate {
+    grid-row: 2/4;
+  }
+  #mapa {
+    grid-row: 1/4;
+  }
+  .caja_transparente {
+    max-width: 60%;
+  }
 }
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  #grid_proyectos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 350px);
+  }
+  #grid_proyectos .grid-item-3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  #grid_proyectos .grid-item-4 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  #grid_proyectos .grid-item-7 {
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
+  .caja_transparente {
+    max-width: 75%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #intro h1 {
+    font-size: 4rem;
+  }
+  #intro h3 {
+    font-size: 2rem;
+  }
+  #intro p {
+    font-size: 1.2rem;
+  }
+  #grid_proyectos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 350px);
+  }
+  #grid_proyectos .grid-item-1 {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  #grid_proyectos .grid-item-3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  #grid_proyectos .grid-item-4 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  #grid_proyectos .grid-item-7 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  .caja_transparente {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
