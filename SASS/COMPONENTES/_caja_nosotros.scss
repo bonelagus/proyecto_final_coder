@@ -1,0 +1,21 @@
+.caja_nosotros{
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px;
+
+    border: solid ;
+    border-radius: 10px;
+    background-color: antiquewhite;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-self: center;
+    align-self: center;
+
+    img{
+        align-self: center;
+        justify-self: center;
+        width: 80%;
+    }
+    
+}

@@ -10,6 +10,18 @@
             font-size: 1.2rem;
         }
     }
+
+    #equipo{
+        .grid-equipo{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #turnero {
+        div {
+            grid-template-columns: 1fr;
+        }
+    }
     
     #grid_proyectos {
         grid-template-columns: 1fr;

@@ -5,6 +5,24 @@
   border-radius: 15px;
 }
 
+.caja_nosotros {
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px;
+  border: solid;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-self: center;
+  align-self: center;
+}
+.caja_nosotros img {
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+}
+
 /* RESET */
 * {
   margin: 0px;
@@ -82,8 +100,15 @@ body {
 #conocenos .img-taller {
   height: fit-content;
 }
-#conocenos .texto_conocenos {
-  background-color: red;
+#conocenos .parrafo_conocenos_mejor {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+#conocenos .parrafo_conocenos_mejor p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 #comentarios {
@@ -120,6 +145,11 @@ body {
   min-height: 550px;
 }
 
+#equipo .grid-equipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* SERVICIOS */
 #servicios {
   margin: 10px;
@@ -150,6 +180,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#turnero div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+#turnero div :first-child form {
+  display: grid;
+  margin: 0px 10%;
+  row-gap: 10px;
+}
+#turnero div :first-child form label {
+  align-self: center;
+  justify-self: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+#turnero div :last-child h5 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+}
+#turnero div :last-child p {
+  text-align: center;
+}
+#turnero div :last-child img {
+  width: 100%;
 }
 
 /* PROYECTOS */
@@ -207,6 +266,10 @@ body {
   row-gap: 15px;
 }
 
+#turno {
+  align-items: center;
+  justify-items: center;
+}
 #turno h5 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
@@ -315,6 +378,12 @@ footer .img_contacto {
   }
   #intro p {
     font-size: 1.2rem;
+  }
+  #equipo .grid-equipo {
+    grid-template-columns: 1fr;
+  }
+  #turnero div {
+    grid-template-columns: 1fr;
   }
   #grid_proyectos {
     grid-template-columns: 1fr;

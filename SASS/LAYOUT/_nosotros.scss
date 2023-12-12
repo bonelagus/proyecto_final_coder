@@ -11,3 +11,10 @@
     }
     // aqui uso COMPONENTES/caja_transparente
 }
+#equipo{
+    .grid-equipo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     // aqui uso COMPONENTES/caja_nosotros   
+    }
+}

@@ -2,34 +2,81 @@
 
 #servicios {
     margin: 10px;
+
     .nuestros_servicios {
         background-image: url(../IMG/bg-taller.jpg);
         background-size: cover;
         margin: 10px 0px;
         padding: 30px;
         min-height: 550px;
-        
+
     }
+
     .boton-turnero {
         display: flex;
         justify-content: center;
         margin-top: 50px;
     }
 }
+
 #mantenimientos {
     img {
         height: auto;
         max-width: 100%;
     }
-    .container_imagenes{
+
+    .container_imagenes {
         display: flex;
         align-items: center;
-        justify-content: center;    
+        justify-content: center;
 
     }
+
     .listas_mantenimiento {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+}
+
+#turnero {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+
+        :first-child {
+            form{
+                display: grid;
+                margin: 0px 10%;
+                row-gap: 10px;
+                label{
+                    align-self: center;
+                    justify-self: center;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+        :last-child {
+            h5 {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 35px;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+
 }
