@@ -1,0 +1,6 @@
+@mixin grid-row-column ($val_row_s, $val_row_e, $val_column_s, $val_column_e){
+    grid-row-start: $val_row_s;
+    grid-row-end: $val_row_e;
+    grid-column-start: $val_column_s;
+    grid-column-end: $val_column_e;
+}

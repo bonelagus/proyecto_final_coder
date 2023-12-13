@@ -10,6 +10,22 @@
             font-size: 1.2rem;
         }
     }
+    .grid-conocenos {
+        grid-template-rows: repeat(5,auto);
+        grid-template-columns: 1fr;
+        .grid-item-con-1 {
+            @include grid-row-column (1,2,1,2);
+        }
+        .grid-item-con-2 {
+            @include grid-row-column (2,3,1,2);
+        }
+        .grid-item-con-3 {
+            @include grid-row-column (3,4,1,2);
+        }
+        .grid-item-con-4 {
+            @include grid-row-column (4,5,1,2);
+        }
+    }
 
     #equipo{
         .grid-equipo{
@@ -24,8 +40,8 @@
     }
     
     #grid_proyectos {
-        grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 350px);
+        grid-template-columns: 1fr;
         .grid-item-1 {
             grid-row: 1/3;
             grid-column: 1/2;
@@ -46,4 +62,5 @@
     .caja_transparente {
         max-width: 100%;
     } 
+
 }

@@ -3,6 +3,14 @@
 @import './COMPONENTES/caja_transparente';
 @import './COMPONENTES/caja_nosotros';
 
+/* MIXINS */
+@import './MIXINS/grid-row-column';
+@import './MIXINS/display-justify';
+
+/*  ANIMACIONES  */
+@import './ANIMATIONS/ampliar-img';
+@import './ANIMATIONS/vibrar-y-ampliar';
+
 // BASE
 @import './BASE/reset';
 @import './BASE/fonts-styles';

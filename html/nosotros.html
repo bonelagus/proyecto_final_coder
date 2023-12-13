@@ -8,6 +8,8 @@
     <!-- LINK DE BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- LINK ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- LINK CSS PROPIO -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -50,7 +52,7 @@
     <!-- HISTORIA Y FUTURO -->
 
     <section id="nosotros">
-        <main>
+        <main data-aos="zoom-in" >
             <div class="caja_transparente">
                 <h2 class="titulo_h3">NUESTRA HISTORIA</h2>
                 <p class="parrafo_sub_h3">
@@ -66,7 +68,7 @@
             </div>
         </main>
 
-        <div class="row">
+        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
             <img class="col-lg-5" src="../IMG/jp_performance_staff.jpg" alt="Foto del staff">
             <div class="col-lg-7">
                 <h2 class="titulo_h2">VISION Y FUTURO</h2>
@@ -85,25 +87,28 @@
     <section id="equipo">
         <h3 class="titulo_h3">NUESTRO EQUIPO</h3>
         <div class="grid-equipo">
-            <div class="caja_nosotros">
+            <div class="caja_nosotros" data-aos="fade-up-right">
                 <img src="../IMG/nosotros-avatar-barba.png" alt="nosotros-avatar-barba">
-                <span><p>Don Pablo <br>Cordinador de taller <br><br>Reprehenderit architecto culpa molestias
-                    ratione, illum dignissimos voluptas necessitatibus repellendus porro voluptatum explicabo. Ullam,
-                    eum beatae.</p></span>
+                <span>
+                    <p>Don Pablo <br>Cordinador de taller <br><br>Reprehenderit architecto culpa molestias
+                        ratione, illum dignissimos voluptas necessitatibus repellendus porro voluptatum explicabo.
+                        Ullam,
+                        eum beatae.</p>
+                </span>
             </div>
-            <div class="caja_nosotros">
+            <div class="caja_nosotros" data-aos="fade-up-left" data-aos-duration="1000">
                 <img src="../IMG/nosotros-avatar-facu.png" alt="nosotros-avatar-facu">
                 <p>Facu <br>Mecanico principal <br><br>Reprehenderit architecto culpa molestias
                     ratione, illum dignissimos voluptas necessitatibus repellendus porro voluptatum explicabo. Ullam,
                     eum beatae.</p>
             </div>
-            <div class="caja_nosotros">
+            <div class="caja_nosotros" data-aos="fade-up-right">
                 <img src="../IMG/nosotros-avatar-mujer.png" alt="nosotros-avatar-mujer">
                 <p>Marina <br>RRHH <br><br>Reprehenderit architecto culpa molestias
                     ratione, illum dignissimos voluptas necessitatibus repellendus porro voluptatum explicabo. Ullam,
                     eum beatae.</p>
             </div>
-            <div class="caja_nosotros">
+            <div class="caja_nosotros" data-aos="fade-up-left" data-aos-duration="1000">
                 <img src="../IMG/nosotros-avatar-rubio.png" alt="nosotros-avatar-rubio">
                 <p>Martin <br>Marketing <br><br>Reprehenderit architecto culpa molestias
                     ratione, illum dignissimos voluptas necessitatibus repellendus porro voluptatum explicabo. Ullam,
@@ -139,6 +144,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- SCRIPT DE ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

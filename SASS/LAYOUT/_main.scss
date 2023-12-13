@@ -2,11 +2,13 @@
 #intro {
     background-image: url(../img/bg-moto-lago.jpg);
     background-size: cover;
-    margin: 10px;
+    margin: 15px;
     min-height: 500px;
+
     div {
         margin-left: 50px;
     }
+
     h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 6rem;
@@ -14,67 +16,65 @@
         padding: 20px 0px;
     }
 }
-#conocenos {
-    margin: 10px;
-    // .grid-conocenos{
-    //     display: grid;
-    //     grid-template-columns: repeat(4, 1fr);
-    //     grid-template-rows: 1fr 1fr;
-    //     row-gap: 10px;
-    //     column-gap: 10px;
-    //     .grid-conocenos-1{
-    //         width: 100%;
-
-    //         grid-row: 1/3;
-    //         grid-column: 1/3;
-    //     }
-    //     :nth-child(2){
-    //         grid-row: 1/2;
-    //         grid-column: 3/4;
-    //     }
-    //     :nth-child(3){
-    //         grid-row: 1/2;
-    //         grid-column: 4/5;
-    //     }
-    //     :nth-child(4){
-    //         grid-row: 2/3;
-    //         grid-column: 3/5;
-    //     }
-    // }
-    .img-taller {
-        height: fit-content;
+.grid-conocenos {
+    margin: 15px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    .grid-item-con-1 {
+        @include grid-row-column (1, 3, 1, 3);
+        @include display-justify (flex, center);
     }
-    // .texto_conocenos {
-    //     background-color: red;
-    // } 
-    .parrafo_conocenos_mejor{
-        display: flex;
-        justify-content: end;
-        margin-top: 10px;
-        
-        p{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 20px;
-            text-align: center;
-        }
+
+    .grid-item-con-2 {
+        @include grid-row-column (1, 2, 3, 4);
+        @include display-justify (flex, center);
+    }
+
+    .grid-item-con-3 {
+        @include grid-row-column (1, 2, 4, 5);
+        @include display-justify (flex, center);
+    }
+
+    .grid-item-con-4 {
+        @include grid-row-column (2, 3, 3, 5);
+        @include display-justify (flex, center);
+        align-items: center;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 15px;
+        padding: 0px 10px;
+        background-color: rgb(255,255,255,.6);
+    }
+
+    img {
+        max-width: 100%;
     }
 }
+
+
 #comentarios {
     margin: 30px 10px;
+
     h2 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
         margin: 30px;
     }
+
     .text-body-secondary {
         color: #ffaa20 !important;
         font-weight: bolder;
     }
+
     .icon-comentarios {
         width: 70px;
         max-height: 50px;
         display: flex;
     }
+
     .card-title {
         display: flex;
         align-items: center;

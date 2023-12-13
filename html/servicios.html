@@ -8,6 +8,8 @@
     <!-- LINK DE BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- LINK ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- LINK CSS PROPIO -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -50,7 +52,7 @@
     <!-- MAIN -->
 
     <main id="servicios">
-        <section class="nuestros_servicios">
+        <section class="nuestros_servicios" data-aos="zoom-in">
             <div class="caja_transparente">
                 <h2 class="titulo_h3">NUESTROS SERVICIOS</h2>
                 <p class="parrafo_sub_h3">
@@ -68,8 +70,8 @@
 
         <section id="mantenimientos">
             <div class="row">
-                <span class="col-lg-6 container_imagenes"><img src="../IMG/service1.jpg" alt=""></span>
-                <span class="col-lg-6 listas_mantenimiento">
+                <span class="col-lg-6 container_imagenes" data-aos="zoom-in-right" data-aos-duration="1000"><img src="../IMG/service1.jpg" alt=""></span>
+                <span class="col-lg-6 listas_mantenimiento" data-aos="zoom-in-left" data-aos-duration="1000">
                     <div>
                         <h5 class="listas_h5">SERVICE Y MANTENIMIENTO</h5>
                         <UL class="listas">
@@ -82,7 +84,7 @@
                 </span>
             </div>
             <div class="row">
-                <span class="col-lg-6 listas_mantenimiento">
+                <span class="col-lg-6 listas_mantenimiento" data-aos="zoom-in-right" data-aos-duration="1000">
                     <div>
                         <H5 class="listas_h5">DIAGNOSTICO Y SOLUCION</H5>
                         <ul class="listas">
@@ -92,11 +94,11 @@
                         </ul>
                     </div>
                 </span>
-                <span class="col-lg-6 container_imagenes"><img src="../IMG/service2.jpg" alt=""></span>
+                <span class="col-lg-6 container_imagenes" data-aos="zoom-in-left" data-aos-duration="1000"><img src="../IMG/service2.jpg" alt=""></span>
             </div>
             <div class="row">
-                <span class="col-lg-6 container_imagenes"><img src="../IMG/service3.jpg" alt=""></span>
-                <span class="col-lg-6 listas_mantenimiento">
+                <span class="col-lg-6 container_imagenes" data-aos="zoom-in-right" data-aos-duration="1000"><img src="../IMG/service3.jpg" alt=""></span>
+                <span class="col-lg-6 listas_mantenimiento" data-aos="zoom-in-left" data-aos-duration="1000">
                     <div>
                         <H5 class="listas_h5">PROYECTOS CUSTOM</H5>
                         <ul class="listas">
@@ -112,17 +114,17 @@
 
         <section id="turnero">
             <h2 class="titulo_h2">TURNERO</h2>
-            <div >
+            <div>
                 <span>
                     <form action="" method="POST">
                         <label for="">NOMBRE Y APELLIDO </label>
                         <input type="text" name="Nombre" id="nombre" placeholder="ej.: Agustin Bonelli">
                         <label for="">ESPECIALIDAD</label>
-                        <select name="" id="" >
+                        <select name="" id="">
                             <option value="">Mantenimiento</option>
                             <option value="">Service</option>
                             <option value="">Custom</option>
-                            
+
                         </select>
                     </form>
                 </span>
@@ -160,6 +162,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- SCRIPT DE ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

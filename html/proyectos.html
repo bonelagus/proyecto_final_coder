@@ -8,6 +8,8 @@
   <!-- LINK DE BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- LINK ANIMATE ON SCROLL -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- LINK CSS PROPIO -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -47,17 +49,21 @@
     </nav>
   </header>
 
-<!-- MAIN -->
-  <main>
+  <!-- MAIN -->
+  <main data-aos="zoom-in">
     <h2 class="titulo_h2">NUESTROS PROYECTOS</h2>
     <section id="grid_proyectos">
-      <div class="grid-item-1"><img src="../IMG/bg-bike-nature.jpg" alt="Foto_moto 2x2"></div>
+      <div class="grid-item-1 ampliar-img"><img src="../IMG/bg-bike-nature.jpg" alt="Foto_moto 2x2"></div>
       <div class="grid-item-2"></div>
-      <div class="grid-item-3"><img src="../IMG/proyectos_1.jpg" alt=""></div>
-      <div class="grid-item-4"><img src="../IMG/proyectos_2.jpg" alt=""></div>
+      <div class="grid-item-3 ampliar-img"><img src="../IMG/proyectos_1.jpg" alt=""></div>
+      <div class="grid-item-4 ampliar-img"><img src="../IMG/proyectos_2.jpg" alt=""></div>
       <div class="grid-item-5"></div>
       <div class="grid-item-6"></div>
-      <div class="grid-item-7"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Qq9r8HYyIIg?si=ZFPcpxxrrjcSIO9y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div class="grid-item-7"><iframe width="100%" height="auto"
+          src="https://www.youtube.com/embed/Qq9r8HYyIIg?si=ZFPcpxxrrjcSIO9y" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe></div>
       <div class="grid-item-8"></div>
     </section>
   </main>
@@ -65,26 +71,31 @@
 
 
 
-<!-- PIE DE PAGINA -->
+  <!-- PIE DE PAGINA -->
 
-<footer>
-  <h4><a href="../index.html">MOTORHEAD</a></h4>
-  <span>
-    <a class="social_media" href="https://facebook.com"><img src="../img/facebook-icon.png" alt="Facebook"></a>
-    <a class="social_media" href="https://instagram.com"><img src="../img/instagram-icon.png" alt="Instagram"></a>
-    <a class="social_media" href="https://youtube.com"><img src="../img/youtube-icon.png" alt="YouTube"></a>
-  </span>
-  <span>
-    <a class="img_contacto" href="https://whatsapp.com"><img src="../img/whatsapp-icon.png" alt="WhatsApp"></a>
-    <a class="btn btn-warning" href="../html/contacto.html">CONTACTO</a>
-  </span>
-</footer>
+  <footer>
+    <h4><a href="../index.html">MOTORHEAD</a></h4>
+    <span>
+      <a class="social_media" href="https://facebook.com"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+      <a class="social_media" href="https://instagram.com"><img src="../img/instagram-icon.png" alt="Instagram"></a>
+      <a class="social_media" href="https://youtube.com"><img src="../img/youtube-icon.png" alt="YouTube"></a>
+    </span>
+    <span>
+      <a class="img_contacto" href="https://whatsapp.com"><img src="../img/whatsapp-icon.png" alt="WhatsApp"></a>
+      <a class="btn btn-warning" href="../html/contacto.html">CONTACTO</a>
+    </span>
+  </footer>
 
 
-<!-- SCRIPT DE BOOTSTRAP  -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"></script>
+  <!-- SCRIPT DE BOOTSTRAP  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- SCRIPT DE ANIMATE ON SCROLL -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
