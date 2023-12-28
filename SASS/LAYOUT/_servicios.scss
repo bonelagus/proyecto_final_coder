@@ -49,13 +49,29 @@
         :first-child {
             form{
                 display: grid;
+                align-self: center;
+                justify-self: center;
+
                 margin: 0px 10%;
                 row-gap: 10px;
+                width: 80%;
+
                 label{
                     align-self: center;
                     justify-self: center;
                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                     font-size: 20px;
+                }
+                input{
+                    background-color: #faebd7;
+                    transition: transform 1s;
+                    &:focus{
+                        transform: scale(1,1.3);
+                    }
+                }
+                select{
+                    background-color: #faebd7;
+
                 }
             }
 
@@ -73,7 +89,7 @@
             }
 
             img {
-                width: 100%;
+                width: 90%;
             }
 
         }
