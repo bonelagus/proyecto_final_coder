@@ -184,7 +184,7 @@ body {
   margin: 10px;
 }
 #nosotros main {
-  background-image: url(../IMG/bg-jp_performance.jpg);
+  background-image: url(../img/bg-jp_performance.jpg);
   background-size: cover;
   margin: 10px 0px;
   padding: 30px;
@@ -201,7 +201,7 @@ body {
   margin: 10px;
 }
 #servicios .nuestros_servicios {
-  background-image: url(../IMG/bg-taller.jpg);
+  background-image: url(../img/bg-taller.jpg);
   background-size: cover;
   margin: 10px 0px;
   padding: 30px;
